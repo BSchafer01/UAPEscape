@@ -7,9 +7,9 @@
     --clr-card-bg: rgb(255, 255, 255); 
     --clr-card-highlight: rgb(249, 249, 253); 
 
-    --clr-primary: rgb(114, 124, 245);
-    --clr-primary-hover: rgb(97, 105, 208); 
-    --clr-primary-active: rgb(91, 99, 196);
+    --clr-primary: rgb(99, 198, 255);
+    --clr-primary-hover: rgb(69, 185, 252); 
+    --clr-primary-active: rgb(23, 170, 255);
 
     --clr-secondary: rgb(10, 207, 151);
 
@@ -35,9 +35,9 @@
         --clr-card-bg: rgb(55, 64, 74); 
         --clr-card-highlight: rgb(68, 78, 90); 
     
-        --clr-primary: rgb(114, 124, 245);
-        --clr-primary-hover: rgb(97, 105, 208); 
-        --clr-primary-active: rgb(91, 99, 196);
+        --clr-primary: rgb(99, 198, 255);
+        --clr-primary-hover: rgb(69, 185, 252); 
+        --clr-primary-active: rgb(23, 170, 255);
     
         --clr-secondary: rgb(10, 207, 151);
     
@@ -135,9 +135,10 @@ h1{
 }
 
 .brand img{
-    width: 2rem;
-    height: 2rem;
-    
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
 }
 
 .logo{
@@ -216,7 +217,7 @@ h1{
 
 main{
     flex-grow: 1;
-    max-width: 90rem;
+    /* max-width: 90rem; */
     margin-right: auto;
     margin-left: auto;
 }
@@ -314,6 +315,10 @@ footer a:active i{
         margin-bottom: 0;
     }
 
+}
+
+footer{
+    min-height: 5rem;
 }
 
 /*#endregion End Footer */

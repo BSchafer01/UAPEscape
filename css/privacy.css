@@ -1,0 +1,13 @@
+main{
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main a {
+    color: var(--clr-primary);
+}
+
+main a:hover{
+    color: var(--clr-primary-hover);
+}

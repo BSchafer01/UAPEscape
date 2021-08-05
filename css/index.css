@@ -1,14 +1,17 @@
 .content-grid{
-    display: grid;
-    grid-template-areas: "image"
-                        "description";
+    display: flex;
     margin-top: 2rem;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media(min-width: 900px){
     .content-grid{
-        grid-template-areas: "description image";
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        flex-direction: row;
+        flex-basis: 35%;
+        gap: 5rem;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
         
     }
 
@@ -17,48 +20,47 @@
 .description{
     display: flex;
     flex-direction: column;
-    grid-area: description;
+    flex: 0 45%;
     margin-left: 2rem;
     margin-right: 2rem;
 
 }
+.banner{
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url('../resources/img/WebBackground.png');
+    background-size: contain;
 
-
-.cta-btn{
-    padding: 0.75rem;
-    background-color: var(--background-clr);
-    border: 2px solid var(--clr-primary);
-    border-radius: 0.6rem;
-    color: var(--clr-primary);
-    width: -moz-fit-content;
-    width: fit-content;
-    
-    text-decoration: none;
-
-    font-size: 1.5rem;
-    
-    transition: all 250ms ease-in-out;
+    width: 100vw;
+    height: 30rem;
+    position: relative;
+}
+.banner img{
+    width: 100vw;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
 }
 
-.cta-btn:hover,
-.cta-btn:focus{
-    background-color: var(--clr-primary-hover);
-    color: var(--foreground-clr);
-    border: 2px solid var(--clr-primary-hover);
-    cursor: pointer;
-}
 
 .splash-img{
     display: flex;
-    grid-area: image;
+    flex: 0 45%;
     align-items: center;
 
 }
 
 .main-logo{
     max-width: 100%;
+    width: fit-content;
     padding-left: 2rem;
     padding-right: 2rem;
+    border: solid 2px var(--clr-primary);
+    border-radius: 2rem;
+    padding: 0;
+    box-shadow: var(--default-shadow);
 }
 
 
