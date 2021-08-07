@@ -191,3 +191,92 @@ h3{
 
 
 }
+
+.btn{
+    display: block;
+    padding: 0.75rem;
+    background-color: var(--background-clr);
+    border: 2px solid var(--clr-primary);
+    border-radius: 0.6rem;
+    color: var(--clr-primary);
+    width: -moz-fit-content;
+    width: fit-content;
+    
+    text-decoration: none;
+
+    font-size: 1.5rem;
+    
+    transition: all 250ms ease-in-out;
+
+    width: 100%;
+}
+
+.btn:hover,
+.btn:focus{
+    background-color: var(--clr-primary-hover);
+    color: var(--foreground-clr);
+    border: 2px solid var(--clr-primary-hover);
+    cursor: pointer;
+
+}
+
+
+.contact{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    max-width: 90rem;
+    background-color: var(--clr-card-bg);
+    margin-bottom: 2rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--default-shadow);
+}
+.contact p{
+    text-align: left;
+    width: 17rem;
+    
+}
+form{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    padding: 0.5rem 2rem;
+    width: 17rem;
+    border-radius: 0.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+textarea{
+    width: 17rem;
+    min-height: 10rem;
+    border-radius: 0.4rem;
+}
+.form-group{
+    text-align: left;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    display: block;
+}
+@media(min-width: 900px){
+    .contact p{
+        min-width: none;
+        width: 30rem;
+    }
+    input{
+        min-width: 30rem;
+        
+    }
+    textarea{
+        min-width: 30rem;
+    }
+}
