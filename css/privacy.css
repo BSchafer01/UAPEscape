@@ -1,7 +1,13 @@
 main{
-    max-width: 90rem;
+    max-width: 20rem;
     margin-left: auto;
     margin-right: auto;
+}
+@media(min-width: 900px){
+    main{
+        max-width: 90rem;
+    }
+
 }
 
 main a {
